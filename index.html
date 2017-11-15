@@ -3,7 +3,7 @@
 	<head>
 		<style>
 			h1 {
-				margin-top: 10vH;
+				margin-top: 10px;
 			}
 			body {
 				text-align:center;
@@ -12,11 +12,18 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
-			.framedCell {				
-				border: 1px solid black;
-			}
-			td {
+			.responsiveTable td {
 				font-size: 24px;
+			}
+			@media all and (max-width:768px) {
+				.responsiveTable tr {
+					display: table;  width:100%;
+					//border: 1px solid black;
+					font-size: 24px;
+				}
+				.responsiveTable td {
+					display: table-row;
+				}
 			}
 			img {
 				margin-left: 10px;
@@ -24,30 +31,22 @@
 			}
 			.bottomRightElement {
 				position: absolute;
-				bottom: 5vH;
-				right: 10vH;
+				bottom: 10px;
+				right: 10px;
 			}
 		</style>
 	<head>
 	<body>
 		<h1>DeBukkIt's Repository</h1>
 		<p>
-			<table>
+			<table class="responsiveTable">
 				<tr>
-					<td class="framedCell"> <img src="images/FirefighterPro.jpg"></img> </td>
-					<td class="framedCell"> <img src="images/SimpleServerClient.jpg"></img> </td>
+					<td> <img src="images/FirefighterPro.jpg"></img> <p><a href="https://dev.bukkit.org/projects/firefighterpro">Main Page</a> | <a href="https://github.com/DeBukkIt/FirefighterPro">Source</a> | <a href="https://dev.bukkit.org/projects/firefighterpro/files/latest">Download</a><hr /></p></td>
+					<td> <img src="images/SimpleServerClient.jpg"></img> <p><a href="SimpleServerClient/docs/index.html">Documentation</a> | <a href="https://github.com/DeBukkIt/SimpleServerClient">Source</a> | <a href="https://github.com/DeBukkIt/SimpleServerClient/releases">Download</a><hr /></p></td>
 				</tr>
 				<tr>
-					<td> <a href="https://dev.bukkit.org/projects/firefighterpro">Main Page</a> | <a href="https://github.com/DeBukkIt/FirefighterPro">Source</a> | <a href="https://dev.bukkit.org/projects/firefighterpro/files/latest">Download</a> </td>
-					<td> <a href="SimpleServerClient/docs/index.html">Documentation</a> | <a href="https://github.com/DeBukkIt/SimpleServerClient">Source</a> | <a href="https://github.com/DeBukkIt/SimpleServerClient/releases">Download</a> </td>
-				</tr>
-				<tr>
-					<td class="framedCell"> <img src="images/RSCommandSigns.jpg"></img> </td>
-					<td class="framedCell"> <img src="images/SimpleFileStorage.jpg"></img> </td>
-				</tr>
-				<tr>
-					<td> <a href="https://dev.bukkit.org/projects/rscommandsigns-2018">Main Page</a> | <a href="https://dev.bukkit.org/projects/rscommandsigns-2018/files/latest">Download</a> </td>
-					<td> <a href="SimpleFileStorage/docs/index.html">Documentation</a> | <a href="https://github.com/DeBukkIt/SimpleFileStorage">Source</a> | <a href="https://github.com/DeBukkIt/SimpleFileStorage/releases">Download</a> </td>
+					<td> <img src="images/RSCommandSigns.jpg"></img> <p><a href="https://dev.bukkit.org/projects/rscommandsigns-2018">Main Page</a> | <a href="https://dev.bukkit.org/projects/rscommandsigns-2018/files/latest">Download</a><hr /></p></td>
+					<td> <img src="images/SimpleFileStorage.jpg"></img> <p><a href="SimpleFileStorage/docs/index.html">Documentation</a> | <a href="https://github.com/DeBukkIt/SimpleFileStorage">Source</a> | <a href="https://github.com/DeBukkIt/SimpleFileStorage/releases">Download</a><hr /></p></td>
 				</tr>
 			</table>
 		</p>
